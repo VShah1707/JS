@@ -15,5 +15,9 @@ const myObj = {
 myObj.greeting = function(){
     console.log("Hello World");
 }
+myObj.greeting2 = function(){
+    console.log(`Hello ${this.name}`);
+}
 
 console.log(myObj.greeting())
+
