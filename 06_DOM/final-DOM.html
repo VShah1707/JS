@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(lanName) {   //It will traverse all the elements 
+        const newEle = document.createElement('li')
+        newEle.innerHTML = `${lanName}`
+        const selectedElement = document.querySelector('.language')
+        selectedElement.append(newEle)    
+    }
+    addLanguage('python')
+    addLanguage('Typescript')
+
+    // for optimised way
+    function optimisedWay(language) {
+        const newEle = document.createElement('li')
+        newEle.appendChild(document.createTextNode(language))
+        document.querySelector('.language').append(newEle)
+    }
+    optimisedWay('Ruby')
+    optimisedWay('Php')
+
+    // Edit
+    const elementToEdit = document.querySelector('li:nth-child(2)')
+    // elementToEdit.innerHTML = "Mojo"    /not optimised project
+    const newLi = document.createElement('li')
+    newLi.innerHTML = "Dummy Language"
+    elementToEdit.replaceWith(newLi)
+
+    // edit
+    const firstElement  = document.querySelector('li:nth-child(1)')
+    firstElement.outerHTML = '<li>This is New Language</li<'
+
+    // remove
+    const lastElement = document.querySelector('li:last-child')
+    lastElement.remove()
+
+</script>
+</html>
