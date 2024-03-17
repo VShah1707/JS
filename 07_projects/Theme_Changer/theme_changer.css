@@ -1,0 +1,33 @@
+.container {
+    /* height: 100%;
+    width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: unset;
+}
+
+.box-container {
+    display: flex;
+}
+
+.box{
+    margin: 25px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    cursor : pointer;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: yellow;
+}
+.box3{
+    background-color: magenta;
+}
+.box4{
+    background-color: aquamarine;
+}
