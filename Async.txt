@@ -1,0 +1,10 @@
+Javascript => Asynchronous (Default behaviour is synchronous) & Single Threaded
+
+Execution Context => 
+      Execute one line at a time 
+      Each operation waits for the last one to complete the execution
+      Call Stack & Memory Allocation (Need to see once)
+
+Blocking code    and    Non-Blocking code
+
+
